@@ -87,3 +87,9 @@ a:visited {
     color: #C25100;
     font-family: 'Lobster';
 }
+
+a:hover {
+    text-decoration: none;
+    color: #C25100;
+    font-family: 'Lobster';
+}
