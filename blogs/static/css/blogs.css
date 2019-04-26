@@ -75,3 +75,15 @@ h4 {
 .comment {
     margin: 20px 0px 20px 20px;
 }
+
+a:link {
+    text-decoration: none;
+    color: #C25100;
+    font-family: 'Lobster';
+}
+
+a:visited {
+    text-decoration: none;
+    color: #C25100;
+    font-family: 'Lobster';
+}
