@@ -17,6 +17,11 @@ body {
     text-decoration: none;
 }
 
+.page-header p small a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
 
 .page-header h1,
 .page-header h1 a,
