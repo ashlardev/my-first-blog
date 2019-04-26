@@ -9,7 +9,7 @@
             </div>
             <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
             <p>{{ post.text|linebreaksbr }}</p>
-            <a href="{% url 'post_detail' pk=post.pk %}"><i class="fas fa-comment" color="#C25100"></i> {{ post.approved_comments.count }}</a>
+            <a href="{% url 'post_detail' pk=post.pk %}"><i class="fas fa-comment fa-2x" color="#C25100"></i> {{ post.approved_comments.count }}</a>
         </div>
     {% endfor %}
 {% endblock %}
