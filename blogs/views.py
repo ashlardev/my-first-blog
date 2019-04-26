@@ -5,9 +5,19 @@ from django.shortcuts import render, get_object_or_404
 from .forms import PostForm, CommentForm
 from django.shortcuts import redirect
 from django.contrib.auth.decorators import login_required
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 # Create your views here.
 def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('-created_date')
+    page = request.GET.get('page', 1)
+
+    paginator = Paginator(posts, 3)
+    try:
+        posts = paginator.page(page)
+    except PageNotAnInteger:
+        posts = paginator.page(1)
+    except EmptyPage:
+        posts = paginator.page(paginator.num_pages)  # Show 3 posts per page
     return render(request, 'blogs/post_list.html',{'posts': posts})
 
 def post_detail(request, pk):
