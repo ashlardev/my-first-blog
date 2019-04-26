@@ -61,7 +61,8 @@ h4 {
 }
 
 .post h2 a,
-.post h2 a:visited {
+.post h2 a:visited,
+.post h2 a:hover {
     color: #C25100;
 }
 
