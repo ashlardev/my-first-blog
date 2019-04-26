@@ -15,11 +15,13 @@ body {
 .page-header p small a:active {
     color: #ffffff;
     text-decoration: none;
+    font-size: smaller;
 }
 
 .page-header p small a:hover {
     color: #ffffff;
     text-decoration: underline;
+    font-size: smaller;
 }
 
 
