@@ -62,8 +62,12 @@ h4 {
 
 .post h2 a,
 .post h2 a:visited,
-.post h2 a:hover {
+.post h2 a:hover,
+.post h1 a,
+.post h1 a:visited,
+.post h1 a:hover {
     color: #C25100;
+    font-family: 'Lobster';
 }
 
 .comment {
