@@ -1,13 +1,18 @@
 
 
 body {
-    padding-left: 15px;
+    padding-left: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+    background-color: #C25100;
 }
 
 .page-header {
     background-color: #C25100;
+    padding-top: 0px;
+    padding-left: 5px;
     margin-top: 0;
-    padding: 20px 20px 20px 40px;
+    border-bottom: none;
 }
 
 .page-header p small a,
@@ -65,10 +70,16 @@ h4 {
     float: right;
     font-size: 26pt;
     margin-right: 20px;
+    margin-left: 0px;
+    margin-top: 0px;
 }
 
 .post {
     margin-bottom: 70px;
+    border-radius: 15px 50px;
+    background-color: #ffffff;
+    padding: 15px;
+    box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.4);
 }
 
 .post h2 a,
@@ -76,14 +87,25 @@ h4 {
 .post h2 a:hover,
 .post h1 a,
 .post h1 a:visited,
-.post h1 a:hover,
+.post h1 a:hover {
+    color: #C25100;
+    font-family: 'Lobster';
+}
+
 .post a,
 .post a:visited,
 .post a:hover {
     color: #C25100;
     font-family: 'Lobster';
+    text-decoration: none;
 }
 
 .comment {
     margin: 20px 0px 20px 20px;
+}
+
+hr {
+    color: #C25100;
+    background-color: #C25100;
+    height: 1px;
 }
