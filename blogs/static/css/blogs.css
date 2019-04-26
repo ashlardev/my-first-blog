@@ -10,6 +10,14 @@ body {
     padding: 20px 20px 20px 40px;
 }
 
+.page-header p small a,
+.page-header p small a:visited,
+.page-header p small a:active {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
 .page-header h1,
 .page-header h1 a,
 .page-header h1 a:visited,
